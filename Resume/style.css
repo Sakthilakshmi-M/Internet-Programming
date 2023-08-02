@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  height: 100vh;
+}
+
+.resume
+{
+  display: flex;
+  background-color: #ECF8F9;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.one {
+  display: grid;
+  place-items: center;
+  background-color: #A7ECEE;
+  width:250px;
+}
+
+.one img {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  margin: 20px 0;
+}
+
+.contact li {
+  font-size: 13px;
+}
+
+.contact li span {
+  margin-left: 5px;
+}
+
+.contact {
+  margin: 20px 0;
+}
+
+.skills {
+  margin: 20px 0;
+}
+
+#fa {
+  margin: 5px;
+}
+
+.skills li {
+  list-style-type:square;
+  margin: 5px;
+}
+
+hr {
+  width: 50%;
+  border: 1px solid black;
+}
+
+h1,h3 {
+  color: #213363;
+  margin: 15px;
+}
+
+.two h1 {
+  font-size: 25px;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education li {
+  list-style-type: disc;
+  margin: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.education {
+  margin-left: 20px;
+}
+
+.two h6 {
+  color: #213363;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.two span {
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #213363;
+}
