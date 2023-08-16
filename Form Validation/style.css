@@ -1,0 +1,48 @@
+:root {
+  --darkblue: #0C134F;
+  --darkblue1: #071952;
+  --darkblue2: #0B666A;
+  --lightblue: #35A29F;
+  --lightblue1: #97FEED;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  background-color: var(--darkblue);
+  display: grid;
+  place-items: center;
+}
+.form-container {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  box-shadow: 0 5px 10px black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  color: var(--lightblue1);
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.form1 {
+  background-color: var(--lightblue1);
+  width: 30vw;
+  height: 60vh;
+}
+
+.form2 {
+  background: url("bg.jpeg");
+  background-position: center;
+  background-size: cover ;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 60vh;
+}
