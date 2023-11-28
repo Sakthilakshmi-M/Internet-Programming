@@ -10,7 +10,7 @@ form.addEventListener('submit',(e)=>{
 
 function validateInputs()
 {
-  let sub = true
+  let validate = true
   message = ''
   const username = document.querySelector("#username");
   const email = document.querySelector("#email");
@@ -20,7 +20,7 @@ function validateInputs()
   const pincode = document.querySelector("#pincode");
   if(username.value === ""){
     message = "Please fill username!";
-    sub=false
+    validate=false
     showerror(username,message);
   }
   else
@@ -28,7 +28,7 @@ function validateInputs()
 
   if(email.value===""){
     message = "Please fill Email!"
-    sub=false
+    validate=false
     showerror(email,message);
   }
   else 
@@ -37,7 +37,7 @@ function validateInputs()
   if(address.value === '')
   {
     message = "Please enter address!"
-    sub=false
+    validate=false
     showerror(address,message);
   }
   else 
@@ -46,7 +46,7 @@ function validateInputs()
   if(city.value === '')
   {
     message = "Please enter City!"
-    sub=false
+    validate=false
     showerror(city,message);
   }
   else 
@@ -55,7 +55,7 @@ function validateInputs()
   if(country.value === '')
   {
     message = "Please enter country!"
-    sub=false
+    validate=false
     showerror(country,message);
   }
   else 
@@ -64,12 +64,12 @@ function validateInputs()
   if(pincode.value === '')
   {
     message = "Please enter pincode!"
-    sub=false
+    validate=false
     showerror(pincode,message);
   }
   else 
     showsuccess(pincode,message);
-  return sub
+  return validate
 }
 
 function showerror(element,message) {
